@@ -1,0 +1,205 @@
+- Geral:
+    - Portainer:
+        icon: /icons/docker-moby.svg
+        href: https://site.com/#!/home
+        ping: dok.site.com
+        description: ▫️Painel Portainer
+    - NetalertX:
+        icon: /icons/netalertx.svg
+        href: https://site.com.top/
+        ping: lan.site.com
+        description: ▫️Dispositivos na LAN
+    - VnStat:
+        icon: /icons/vnstat.png
+        href: https://vnstat.site.com/
+        ping: vnstat.site.com
+        description: ▫️Painel VnStat Tráfego
+    - Uptime:
+        icon: /icons/uptime-kuma.png
+        href: https://kuma.site.com/
+        siteMonitor : http://18.223.244.157/status.html
+        description: ▫️Status dos Meus Serviços
+    - rTorrent:
+        icon: /icons/rutorrent.svg
+        href: https://rt.site.com/
+        ping: https://rt.site.com/200.html
+        description: ▫️Gerenciar rTorrent
+    - Panel Pi:
+        icon: /icons/sys.png
+        href: https://site.com/panel/dash.php#
+        ping: https://site.com/panel/200.html
+        description: ▫️Gerenciar Pi        
+    - Rss:
+        icon: /icons/rss.webp
+        href: https://rss.site.com/
+        ping: https://rss.site.com/
+        description: ▫️Leitor Rss      
+    - Nexterm:
+        icon: /icons/nexterm.svg
+        href: https://next.site.com/servers
+        ping: https://next.site.com/
+        description: ▫️Web Terminal  
+    - Cloudflared:
+        icon: /icons/cloudflare-tunel.svg
+        href: http://pi.local:14333/
+        ping: site.com
+        description: ▫️Status Túnel Cloudflare
+    - Rclone:
+        icon: /icons/rclone.svg
+        href: https://rclone.site.com/
+        ping: rclone.site.com
+        description: ▫️Rclone gDrive
+    - Dozzle:
+        icon: /icons/dozzle.webp
+        href: https://dz.site.com/
+        ping: dz.site.com
+        description: ▫️Logs do Docker
+    - Memos:
+        icon: /icons/memos.png
+        href: https://notes.site.com/explore
+        ping: notes.site.com
+        description: ▫️Memos notepad
+    - Pi Connect:
+        icon: /icons/logo.svg
+        href: https://connect.raspberrypi.com/devices
+        ping: connect.raspberrypi.com
+        description: ▫️Raspberry Connect
+    - Glances:
+        icon: /icons/glances.svg
+        href: http://pi.local:61208/
+        ping: http://192.168.0.119:61208/
+        description: ▫️Glances Monitoramento
+    - Dokuwiki:
+        icon: /icons/dokuwiki.svg
+        href: https://site.com/wiki/doku.php/home
+        ping: https://site.com/wiki/doku.php/home       
+        description: ▫️DokuWiki     
+   
+##############################################################
+- Note:
+    - rTorrent Note:
+        icon: /icons/rutorrent.svg
+        href: http://192.168.0.137/rutorrent/        
+        ping: http://192.168.0.137/rutorrent/
+        description: ▫️Gerenciar rTorrent Notebook
+
+    - Painel Note:
+        icon: /icons/sys.png
+        href: http://192.168.0.137/html/panel/
+        ping: http://192.168.0.137/html/panel/
+        description: ▫️Painel Notebook
+
+- Monitoramento:
+    - Speedtest:
+        href: https://speed.site.com/
+        icon: /icons/speedtest.png
+        description: ▫️Speedtest Server
+        ping: https://speed.site.com/
+        container: Speedtest
+        showStats: true 
+        server: my-docker        
+        widget:
+           type: speedtest
+           url: https://speed.site.com/
+           key: apikeyhere
+           bitratePrecision: 3
+
+    - AutoBrr:
+        href: https://brr.site.com/
+        icon: autobrr.png
+        description: ▫️AutoBrr Panel
+        ping: brr.site.com
+        container: Autobrr
+        showStats: true 
+        server: my-docker  
+        widget:
+           type: autobrr
+           url: http://192.168.0.119:7474
+           key: apikeyhere
+
+    - Portainer:
+        href: https://dok.site.com
+        icon: /icons/docker-moby.svg
+        description: ▫️Portainer Panel
+        ping: dok.site.com
+        container: Portainer
+        showStats: true 
+        server: my-docker  
+        widget:
+           type: portainer
+           url: https://dok.site.com
+           env: 3
+           key: keyhere
+
+    - Scrutiny:
+        href: https://disk.site.com/web/dashboard
+        icon: scrutiny.png
+        description: ▫️Saúde dos Discos
+        ping: disk.site.com
+        container: Scrutiny
+        showStats: true 
+        server: my-docker  
+        widget:
+           type: scrutiny
+           url: http://192.168.0.119:3302
+
+    - Uptime Kuma:
+        icon: uptime-kuma
+        href: "https://kuma.site.com"
+        description: ▫️Sites Status
+        ping: kuma.site.com
+        container: Uptime-kuma
+        showStats: true 
+        server: my-docker   
+        widget:
+              type: uptimekuma
+              url: http://192.168.0.119:3001
+              slug: home
+
+    - Cloudflare:
+        icon: cloudflare.png
+        href: https://one.dash.cloudflare.com/youprofile/home/quick-start
+        description: ▫️Cloudflare Tunnels
+        ping: site.com
+        container: Cloudflare
+        showStats: true
+        server: my-docker
+        widget:
+            type: cloudflared
+            accountid: id accountid
+            tunnelid: idtunnel
+            key: -keyss-y
+
+    - NetalertX:
+        href: https://lan.site.com
+        icon: /icons/netalertx.svg
+        description: ▫️NetalertX Panel
+        ping: https://lan.site.com
+        container: Netalertx
+        showStats: true
+        server: my-docker
+        widget:
+           type: netalertx
+           url: http://192.168.0.119:8133
+           key: keyhere
+
+    - rTorrent:
+        href: https://rt.site.com/
+        icon: /icons/rutorrent.svg
+        description: ▫️rTorrent Panel
+        ping: https://rt.site.com/200.html
+        widget:
+           type: rutorrent
+           url: http://192.168.0.119/rutorrent
+           username: user
+           password: passs 
+
+    - NextDNS:
+        href: https://test.nextdns.io/
+        icon: /icons/next.png
+        description: ▫️NextDNS Status Panel
+        ping: https://api.nextdns.io/profiles/yourpr0file/settings/performance
+        widget:
+           type: nextdns
+           profile: "23434343434"
+           key: "yourkey"

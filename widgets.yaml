@@ -1,0 +1,46 @@
+- logo:
+    icon: /icons/logo.webp
+    href: https://home.yoursite.in/
+    target: _self
+- resources:
+    cputemp: true
+    tempmin: 0 # optional, minimum cpu temp
+    tempmax: 100
+- resources: 
+    cpu: true
+    expanded: true
+- resources:
+    expanded: true 
+    memory: true 
+- resources:
+    expanded: true 
+    disk: 
+      - /
+      - /sdb2
+- resources:
+    expanded: true 
+    network: true 
+- stocks:
+    type: stocks
+    provider: finnhub
+    color: true # optional, defaults to true
+    cache: 15 # optional, default caches results for 1 minute
+    watchlist:
+      - BTC
+      - ETH
+      - AAPL
+      - GOOGL
+- openweathermap:
+    timezone: America/Sao_Paulo # optional, defaults to America/New_York
+    units: metric # or imperial
+    longitude: -51.5454545454
+    latitude: -23.54545454545
+    provider: openweathermap
+    apiKey: ######youapikey###### # required only if not using provider, this reveals api key in requests
+    cache: 5 # Time in minutes to cache API responses, to stay within limits
+    format: 
+      maximumFractionDigits: 1
+- datetime:
+    locale: br
+    format: 
+     timeStyle: short
