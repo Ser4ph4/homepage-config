@@ -17,7 +17,7 @@
     - Uptime:
         icon: /icons/uptime-kuma.png
         href: https://kuma.site.com/
-        siteMonitor : http://18.223.244.157/status.html
+        siteMonitor : http://yousite/status.html
         description: ▫️Status dos Meus Serviços
     - rTorrent:
         icon: /icons/rutorrent.svg
