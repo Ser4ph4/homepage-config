@@ -1,5 +1,5 @@
 /* ================================
-   custom.css - Modular & Final ⚡
+  custom.css - (17/05/2026) ⚡
    ================================ */
 
 /* ===== ROOT & VARIABLES ===== */
@@ -102,8 +102,9 @@ span.secondary-text.text-theme-800 {
 
 .docker-status {
   display: inline-flex;
-  background: #2525289c;
-  border-radius: 0 0 10px 10px;
+  background: #1d2434ad;
+  border-radius: 2px 0 0px 34px;
+  padding: 12px;
 }
 
 /* ===== SHADOWS ===== */
@@ -153,4 +154,41 @@ div.flex.flex-row.items-center.grow.justify-end::before {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.text-xs.bookmark-description {
+  color: #9fa4a1;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.5px;
+  background: #192232;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.text-xs.bookmark-description::before {
+  content: "🔗";
+  font-size: 82%;
+  vertical-align: 1px;
+  margin-left: 2px;
+  background: #232d3d;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.text-xs.bookmark-name {
+  letter-spacing: 0.5px;
+  background: #1f28396e;
+  padding: 5px;
+  border-radius: 0px 10px 10px 0;
+  font-size: 13px;
+}
+
+.service-description {
+  color: #848a8b;
+  background: #23252982;
+  display: inherit;
+  max-width: max-content;
+  padding: 1px 2px;
+  border-radius: 5px;
+  font-weight: 500;
 }

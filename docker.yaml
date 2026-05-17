@@ -1,0 +1,11 @@
+my-docker:
+  host: 192.168.0.119
+  socket: /var/run/docker.sock
+
+note:
+  host: 192.168.0.129
+  port: 2375
+
+oracle:
+  host: 888.88.88.888
+  port: 2375

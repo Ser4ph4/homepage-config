@@ -1,54 +1,77 @@
-# Basic Site Settings
-title: Pi - Dashboard
+######################
+# Basic Site Settings#
+######################
+title: Home - Dashboard
 theme: dark
 color: slate
 target: _blank
 cardBlur: xl
 language: pt
 hideVersion: true
+disableIndexing: true
 disableCollapse: true
 useEqualHeights: true
 headerStyle: boxed
 showStats: true
+statusStyle: "dot"
 hideErrors: true
 fullWidth: true
 fadeIn: true
-base: https://home.yoursite.in/
+base: https://pi.local
 favicon: /icons/amp.webp
 backgroundOpacity: 0.83
 background: /icons/bg2.jpg
-
+blockHighlights:
+  levels:
+    good: "bg-emerald-500/40 text-emerald-950 dark:bg-emerald-900/60 dark:text-emerald-400"
+    warn: "bg-amber-300/30 text-amber-900 dark:bg-amber-900/30 dark:text-amber-200"
+    danger: "bg-rose-700/45 text-rose-200 dark:bg-rose-950/70 dark:text-rose-400"
+##############################################################
 #Fonts:
 links:
   - name: Google Fonts (Preconnect)
     href: https://fonts.gstatic.com
     rel: preconnect
-
   - name: Google Fonts
     href: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:ital,wght@0,700&family=Roboto+Condensed:wght@100..900&family=Roboto:wght@100;400;500;700&display=swap
     rel: stylesheet
-
+##############################################################
 #providers:
 providers:
-  openweathermap: your_api_key_here
-  finnhub: your_api_key_here
+  openweathermap: 88888888888888888888
+  finnhub: 88888888888888888888888
+##############################################################
 
 layout:
+  - Tráfego:
+      header: false
+      style: row
+      columns: 3
   - Geral:
       header: false
       style: row
-      columns: 5
+      columns: 3
+  - Tráfego2:
+      header: false
+      style: row
+      columns: 4
   - Monitoramento:
       header: false
       style: row
       columns: 3
+  - Oracle:
+      icon: /icons/bars.svg
+      header: true
+      style: row
+      columns: 5
   - Note:
       icon: /icons/bars.svg
       header: true
       style: row
-      columns: 2
+      columns: 6
   - Links:
       icon: /icons/link.svg
       header: true
       style: row
       columns: 3
+##############################################################
